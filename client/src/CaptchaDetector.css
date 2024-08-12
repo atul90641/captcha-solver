@@ -1,0 +1,89 @@
+/* CaptchaDetector.css */
+
+/* Ensure the body or parent container has no margin and uses flexbox for centering */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (optional) */
+    min-height: 100vh;       /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* Optional: Background color for contrast */
+  }
+  
+  .captcha-detector {
+    max-width: 500px;
+    width: 100%; /* Ensure it scales down on smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .captcha-detector h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .captcha-detector form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .captcha-detector input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .captcha-detector button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .captcha-detector button:hover {
+    background-color: #0056b3;
+  }
+  
+  .captcha-detector .image-preview {
+    margin-top: 20px;
+  }
+  
+  .captcha-detector .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .captcha-detector div {
+    margin-top: 20px;
+  }
+  
+  .captcha-detector h3 {
+    font-size: 1.2em;
+  }
+  
+  .captcha-detector p {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .captcha-detector button.copy-button {
+    background-color: #28a745;
+  }
+  
+  .captcha-detector button.copy-button:hover {
+    background-color: #218838;
+  }
+  
+  .captcha-detector button.copy-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
