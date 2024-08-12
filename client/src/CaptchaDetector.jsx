@@ -28,7 +28,7 @@ const CaptchaDetector = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:5000/detect-captcha', formData, {
+      const response = await axios.post('https://3c41-47-15-215-176.ngrok-free.app/detect-captcha', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
