@@ -28,7 +28,7 @@ const CaptchaDetector = () => {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/detect-captcha', formData, {
+      const response = await axios.post('https://captcha-solver-server.vercel.app/detect-captcha', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
