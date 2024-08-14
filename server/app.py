@@ -7,6 +7,10 @@ import io
 app = Flask(__name__)
 CORS(app)  # Allow all origins, or configure specific origins
 
+@app.route('/')
+def home():
+    return 'Home Page Route'
+
 @app.route('/detect-captcha', methods=['POST'])
 def detect_captcha():
     # Get the image file from the request
