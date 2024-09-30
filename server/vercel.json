@@ -13,5 +13,10 @@
         "dest": "app.py"
       }
       
-    ]
+    ],
+
+    "github": {
+      "enabled": false
+    }
+      
   }
