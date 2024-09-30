@@ -9,7 +9,7 @@ CORS(app)  # Allow all origins, or configure specific origins
 
 @app.route('/')
 def home():
-    return 'Home Page Route'
+    return 'Server is running on port $$'
 
 @app.route('/detect-captcha', methods=['POST'])
 def detect_captcha():
